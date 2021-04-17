@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddForm from "./Components/AddForm";
+import DolaToVND from "./Components/DolaToVND";
+import DSSinhVien from "./Components/DSSinhVien";
+import MouseClick from "./Components/MouseClick";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const arrSV = ["Ngọc Anh", "Vũ Hà", "Thu Hương"];
+	return (
+		<div className="App">
+			<MouseClick />
+			<DolaToVND />
+			<AddForm />
+			<DSSinhVien data={arrSV} />
+		</div>
+	);
 }
 
 export default App;
